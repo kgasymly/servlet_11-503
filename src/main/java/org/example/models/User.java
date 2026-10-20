@@ -1,0 +1,21 @@
+package org.example.models;
+
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@EqualsAndHashCode
+@Builder
+public class User {
+    private Long id;
+    private String name;
+    private String surname;
+    private Integer age;
+
+    private String email;
+    private String city;
+    private String phone;
+}
