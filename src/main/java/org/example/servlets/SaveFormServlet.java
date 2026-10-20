@@ -22,4 +22,8 @@ public class SaveFormServlet extends HttpServlet {
         req.setAttribute("count", count);
         req.getRequestDispatcher("/jsp/save.jsp").forward(req, resp);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {}
 }
